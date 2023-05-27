@@ -1,19 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<!-- saved from url=(0063)file:///C:/Users/hp/Desktop/javascript/rock-paper-scissors.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>rock-paper-scissors</title>
   </head>
     <body>
       
-    <p></p>
+   <h3>rock-paper-scissors</h3>
+   <button onclick="
+   let computerMove = Math.random();
+   let result = '';
+
+   if(computerMove>0 && computerMove<=1/3){
+    result ='rock'
+   }else if(computerMove>1/3 && computerMove<=2/3){
+    result ='paper'
+   }else
+   result ='Scissors'
+   let popUp ='';
+
+   if(result= 'rock'){
+    popUp ='Tie.';
+   }else if(result ='paper'){
+    popUp =`Computer move is ${result} You won. `;
+   }else 
+   popUp =`Computer move is ${result} You lost.`;
+   
+   alert(popUp);
+   
+   
+   
+   ">Rock</button>
+   <button>Paper</button>
+   <button>Scissors</button>
 
 
-
-
-
-
-
-
-    </body>
-
+</body>
 </html>
